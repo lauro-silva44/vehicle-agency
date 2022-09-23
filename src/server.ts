@@ -1,8 +1,10 @@
 import express = require("express");
 import { AppDataSource } from "./data-source";
 import { routes } from "./routes";
+import cors = require("cors");
 
 const app = express();
+app.use(cors()); // Use this after the variable declaration
 
 AppDataSource.initialize()
   .then(async () => {

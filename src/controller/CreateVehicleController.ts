@@ -12,6 +12,7 @@ export class CreateVehicleController {
       chassi,
       purchaseValue,
       bought,
+      photo,
     } = request.body;
     const service = new CreateVehicleService();
     const result = await service.execute({
@@ -23,6 +24,7 @@ export class CreateVehicleController {
       chassi,
       purchaseValue,
       bought,
+      photo,
     });
 
     if (result instanceof Error) {

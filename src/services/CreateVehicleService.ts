@@ -10,6 +10,7 @@ type VihecleRequest = {
   chassi: string;
   purchaseValue: number;
   bought: boolean;
+  photo: string;
 };
 
 export class CreateVehicleService {
@@ -22,6 +23,7 @@ export class CreateVehicleService {
     chassi,
     purchaseValue,
     bought,
+    photo,
   }: VihecleRequest): Promise<Error | Vehicle> {
     const vehicleRepo = AppDataSource.getRepository(Vehicle);
 
@@ -38,6 +40,7 @@ export class CreateVehicleService {
       chassi,
       purchaseValue,
       bought,
+      photo,
     });
     console.log("VEHICLE SUCESSFULLY REGISTERED!!");
     vehicleRepo.save(newVehicle);

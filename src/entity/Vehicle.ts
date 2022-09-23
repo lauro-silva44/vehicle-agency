@@ -30,6 +30,9 @@ export class Vehicle {
   @Column()
   bought: boolean;
 
+  @Column()
+  photo: string;
+
   constructor() {
     if (!this.id) {
       this.id = uuid();
