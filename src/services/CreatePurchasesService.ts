@@ -30,7 +30,7 @@ export class CreatePurchaseService {
 
     await repo.save(purch);
     await vehicleRepo.save(alreadySold);
-    console.log(alreadySold);
+    console.log("SOLD!!");
 
     return purch;
   }
