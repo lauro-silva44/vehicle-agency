@@ -2,7 +2,7 @@
 
 ![projet print](./doc/code.png)
 
-# Stack:
+## Stack:
 
 - [TypeORM](https://typeorm.io//) - An ORM that can run in NodeJS, Browser, Cordova, PhoneGap, Ionic, React Native, etc.
 
@@ -21,7 +21,7 @@ $PROJECT_ROOT
 └── tsconfig.json         // TypeScript compiler options
 ```
 
-# Steps to run this project:
+## Steps to run this project:
 
 1. Run `npm i` command
 2. Setup database settings inside `data-source.ts` file
